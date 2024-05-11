@@ -1,3 +1,7 @@
+#home {
+  text-decoration: none;
+}
+
 .background-radial-gradient {
     background-color: hsl(218, 41%, 15%);
     background-image: radial-gradient(650px circle at 0% 0%,
