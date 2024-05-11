@@ -1,121 +1,56 @@
-body {
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
     overflow: hidden;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background: linear-gradient(0deg, #351983d8 6%, #2a303f 95%);
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+ 
+ 
+ /* Estilos para el efecto hover en botones */
+/* Estilos para el efecto hover en botones */
+#registro-boton:hover {
+    background-color: #000000; /* Cambia el fondo a rojo (color de Google) */
+    color: white; /* Cambia el texto a blanco */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.login {
-    position: relative;
-    width: 360px;
-    height: 520px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #15171d;
-}
 
-.login:before,
-.login__circuit-mask {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 700px;
-    height: 594px;
-}
-
-.login:before {
-    background: url(../images/bg-circuito.svg);
-}
-
-.login__circuit-mask {
-    display: grid;
-    place-items: center;
-    -webkit-mask: url(../images/bg-circuito.svg);
-    mask: url(../images/bg-circuito.svg);
-}
-
-.login__circuit-mask:before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid #00f0ff;
-    animation: onda 7s infinite;
-    animation-delay: 1s;
-}
-
-.login__heading {
-    text-align: center;
-}
-
-@keyframes onda {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(8);
-    }
-    100% {
-        transform: scale(8);
-    }
-}
-
-/* Estilo para el párrafo dentro del div con la clase login */
-.login p {
-    font-size: 16px;
-    color: #fffafa;
-    margin-bottom: 10px;
-}
-
-/* Estilos generales para los campos de entrada */
-.login input[type="text"],
-.login input[type="tel"],
-.login input[type="email"],
-.login select,
-.login input[type="date"],
-.login button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 2px solid #302368;
-    border-radius: 7px;
-    font-size: 12px;
-}
-
-/* Estilo específico para los campos de entrada obligatorios */
-.login input[required],
-.login select[required],
-.login input[type="date"][required] {
-    background-color: #f9f9f9;
-}
-
-/* Estilos específicos para los botones */
-.login button.register {
-    cursor: pointer;
-    font-size:16px;
-    font-family:Georgia;
-    height:38px;
-    border-width:2px;
-    color:#fff;
-    border-color:#337bc4;
-    font-weight:bold;
-    border-top-left-radius:17px;
-    border-top-right-radius:17px;
-    border-bottom-left-radius:17px;
-    border-bottom-right-radius:17px;
-    box-shadow: 3px 4px 0px 0px #1564ad;
-    text-shadow: 0px 1px 0px #528ecc;
-    background:linear-gradient(#0255a8, #002346);
-}
-.login button.register:hover{
-    background: linear-gradient(#0c243b, #011222);
-
+/* Estilos específicos para el botón de Google */
+#google-boton:hover {
+    background-color: #DB4437; /* Cambia el fondo a rojo (color de Google) */
+    color: white; /* Cambia el texto a blanco */
+    transition: background-color 0.3s, color 0.3s;
 }
