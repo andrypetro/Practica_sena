@@ -1,0 +1,28 @@
+#header-tech {
+    background-color: #007bffe0; /* Azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 50px 0; /* Espacio superior e inferior */
+    text-align: center; /* Alineación de texto al centro */
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #header-tech h2 {
+    font-size: 2.5rem; /* Tamaño de título más grande */
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+  
+  #header-tech p {
+    font-size: 1.1rem; /* Tamaño de párrafo más grande */
+    line-height: 1.6; /* Espacio entre líneas */
+  }
+  
+  #header-tech img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto */
+   
+    display: block; /* Convierte la imagen en un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  
+  
