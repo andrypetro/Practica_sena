@@ -24,5 +24,7 @@
     display: block; /* Convierte la imagen en un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
-  
+  body{
+    background-color: #dee9ff;
+}
   
