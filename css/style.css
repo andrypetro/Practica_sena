@@ -1,37 +1,4 @@
 
-
-
-.nav-item{
-  color: black;
-}
-
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #25d366;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  z-index: 99;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  background-color: #1da15a;
-  color: #fff;
-}
-
-.whatsapp-button i {
-  font-size: 24px;
-}
-
------------------------
 *{
     box-sizing: border-box;
     font-family: "work Sans";
@@ -40,7 +7,7 @@
   }
    /* Estilos para el encabezado */
    .contenedor-header {
-    background-color: #9afa2d;
+    background-color: #e480f8;
     padding: 2px;
   }
   
